@@ -1,0 +1,93 @@
+body {
+    padding: 0;
+    padding-top: 0px;
+}
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid black;
+    text-align: right;
+    position: relative;
+    font-family: 'Dosis';
+    font-weight: 300;
+    margin: 0;
+  }
+
+.logo {
+position: absolute;
+top: 0;
+left: 0;
+font-size: 32px;
+font-weight: 100;
+padding: 25px;
+border-right: 1px solid black;
+}
+  
+.link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 0;
+    margin: 15px 25px;
+    position: relative;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 800;
+    font-size: 24px;
+}   
+.bar {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 5px solid rgb(4, 4, 155);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.link:hover .bar{
+    opacity: 1;
+    bottom: 5px;
+}
+
+a:hover {
+    text-decoration: none !important; 
+}
+
+
+.row {
+  display: flex; /* equal height of the children */
+  width: 100%;
+  
+}
+
+.col {
+  flex: 1; /* additionally, equal width */
+  
+  padding: 1em;
+  border: solid;
+  min-width: 30%;
+  margin: 10px;
+  border: 3px solid rgb(4, 4, 155);
+  border-style: outset;
+  box-shadow: 12px 12px 2px 1px rgba(4, 4, 155, .2);
+}
+
+.book-title {
+    text-align:center; 
+    vertical-align: middle;
+}
+
+.book-cover {
+    width:  150px;
+    height: 200px;
+    display:block;
+    margin:auto;
+}
+
+.btn-holder {
+    margin-top:10px;
+    justify-content: flex-end;
+    display: flex;
+  }
+
